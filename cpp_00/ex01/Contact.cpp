@@ -1,36 +1,31 @@
-#include <string>
+#include <iostream>
+#include "contact.class.hpp"
 
-class	Contact {
+Contact::Contact() {
 
-	void addFirstName(string firstNameInput)
-	{
-		
-	}
+}
 
-	void addLasttName(string firstNameInput)
-	{
-		
-	}
+Contact::Contact() {
 
-	void addNickName(string firstNameInput)
-	{
-		
-	}
+}
 
-	void addPhoneNumber(string firstNameInput)
-	{
-		
-	}
+void	Contact::addFirstName(std::string) {
 
-	void addDarkestSecret(string firstNameInput)
-	{
-		
-	}
+}
 
-	int m_index;
-	string m_firstName;
-	string m_lastName;
-	string m_nickName;
-	string m_phoneNumber;
-	string m_darkestSecret;
-}; 
+void	Contact::addLasttName(std::string) {
+
+}
+
+void	Contact::addNickName(std::string) {
+
+}
+
+void	Contact::addPhonenumber(std::string) {
+
+}
+
+void	Contact::addDarkestSecret(std::string) {
+
+}
+
