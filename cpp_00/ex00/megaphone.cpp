@@ -6,7 +6,7 @@ int	main(int ac, char **av)	{
 			std::string data=av[i];
 			for (int j=0; data[j]!=0; j++) {
 				data[j] = toupper(data[j]);
-			};
+			}
 			std::cout << data;
 		}
 		std::cout << std::endl;
