@@ -2,22 +2,21 @@
 # define CONTACT_CLASS_H
 
 #include <string>
+#include <iostream>
 
 class	Contact {
 
 	public:
-
 	Contact();
 	~Contact();
 
-	void addFirstName(std::string);
-	void addLasttName(std::string);
-	void addNickName(std::string);
-	void addPhonenumber(std::string);
-	void addDarkestSecret(std::string);
+	void addEntry(std::string);
+	void deleteEntry(std::string);
+	void displayEntry(std::string);
 
 	private:
 	int m_index;
+	int m_indexCreation;
 	std::string m_firstName;
 	std::string m_lastName;
 	std::string m_nickName;

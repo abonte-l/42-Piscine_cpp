@@ -1,6 +1,6 @@
 NAME 		=	myPhoneBook
 
-SRCS		=	
+SRCS		=	Contact.cpp		myPhoneBook.cpp		PhoneBook.cpp
 
 CC			=	c++
 

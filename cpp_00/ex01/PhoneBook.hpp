@@ -2,6 +2,10 @@
 # define PHONEBOOK_CLASS_H
 
 #include <string>
+#include <iostream>
+#include "Contact.hpp"
+
+class	Contact;
 
 class	PhoneBook {
 
@@ -10,10 +14,12 @@ class	PhoneBook {
 	~PhoneBook();
 
 	void	addContact();
+	void	deleteContact();
+	void	displayContact();
+	void	homeDisplay();
 
 	private:
-	char m_phoneBook [8];
-
+	char m_phoneBook[8];
 };
 
 #endif
