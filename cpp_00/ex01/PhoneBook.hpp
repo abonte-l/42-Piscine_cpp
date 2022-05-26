@@ -6,23 +6,14 @@
 class	PhoneBook {
 
 	public:
-
 	PhoneBook();
 	~PhoneBook();
 
-	void addFirstName(std::string);
-	void addLasttName(std::string);
-	void addNickName(std::string);
-	void addPhonenumber(std::string);
-	void addDarkestSecret(std::string);
+	void	addContact();
 
 	private:
-	int m_index;
-	std::string m_firstName;
-	std::string m_lastName;
-	std::string m_nickName;
-	std::string m_phoneNumber;
-	std::string m_darkestSecret;
-}; 
+	char m_phoneBook [8];
+
+};
 
 #endif

@@ -1,13 +1,12 @@
 #include <string>
+#include <iostream>
+#include "PhoneBook.hpp"
 
-class	PhoneBook {
+PhoneBook::PhoneBook() {
 
-	void	addContact()
-	{
-		
-	}
+}
 
-	char m_phoneBook [8];
+PhoneBook::~PhoneBook() {
 
-};
+}
 
