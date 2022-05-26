@@ -5,7 +5,7 @@ Contact::Contact() {
 
 }
 
-Contact::Contact() {
+Contact::~Contact() {
 
 }
 
