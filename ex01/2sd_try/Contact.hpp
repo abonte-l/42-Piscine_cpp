@@ -7,7 +7,6 @@
 
 class	Contact {
 	private:
-	
 		struct contactData
 		{
 			int _index;
@@ -29,8 +28,6 @@ class	Contact {
 		void addEntry();
 		void deleteEntry(std::string);
 		void displayEntry(std::string);
-
-		int index;
 }; 
 void	homeDisplay();
 int		commandCollect();

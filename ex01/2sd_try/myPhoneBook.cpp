@@ -11,6 +11,7 @@ int	main() {
 	} while (command == 0);
 	if (command == 1) {
 		std::cout << "ADDING A CONTACT" << std::endl;
+		contact.addEntry();
 	}
 	else if (command == 2) {
 		std::cout << "SEARCH ENGINE" << std::endl;
