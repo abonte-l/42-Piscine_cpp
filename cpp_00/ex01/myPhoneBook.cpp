@@ -2,6 +2,11 @@
 
 int	main() {
 
-	PhoneBook::homeDisplay();
-
+	PhoneBook myPhoneBook;
+	homeDisplay();
+	int command = 0;
+	do {
+		command = commandCollect();
+	} while (command == 0);
+			
 }

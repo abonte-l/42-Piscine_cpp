@@ -13,13 +13,16 @@ class	PhoneBook {
 	PhoneBook();
 	~PhoneBook();
 
-	void	addContact();
-	void	deleteContact();
-	void	displayContact();
-	void	homeDisplay();
+	void addContact();
+	void deleteContact();
+	void displayContact();
+	void homeDisplay();
 
 	private:
 	char m_phoneBook[8];
 };
+
+void	homeDisplay();
+int		commandCollect();
 
 #endif
