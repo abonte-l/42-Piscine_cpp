@@ -37,8 +37,14 @@ int	main() {
 			phoneBook.addEntry();
 		}
 		else if (command == "SEARCH") {
+			
 			std::cout << "SEARCH ENGINE" << std::endl;
 			phoneBook.displayAll();
+			std::cout << "SELECT THE CONTACT TO DISPLAY" << std::endl;
+			std::getline(std::cin, ); // je dois mettre une string ici pour que ca fonctionne il faut donc un atoi pour comparer ensuite auxindex
+			phoneBook.displayEntry(i);
+
+
 		}
 		else if (command == "EXIT") {
 			std::cout << "EXITING..." << std::endl;

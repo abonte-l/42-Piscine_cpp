@@ -69,6 +69,10 @@ void PhoneBook::displayAll() {
 
 }
 
-void	PhoneBook::displayEntry() {
-	
+void	PhoneBook::displayEntry(int i) {
+	std::cout << "FIRSTNAME : " << _data[i]._firstName << std::endl;
+	std::cout << "LASTNAME : "<< _data[i]._lastName << std::endl;
+	std::cout << "NICKNAME : "<< _data[i]._nickName << std::endl;
+	std::cout << "LASTNAME : "<< _data[i]._phoneNumber << std::endl;
+	std::cout << "NICKNAME : "<< _data[i]._darkestSecret << std::endl;
 }

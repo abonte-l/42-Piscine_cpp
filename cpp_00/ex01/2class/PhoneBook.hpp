@@ -19,7 +19,7 @@ class	PhoneBook {
 		Contact::contactData _data[8];
 
 		void addEntry();
-		void displayEntry();
+		void displayEntry(int);
 		void displayFirstLine();
 		void displayAll();
 		std::string stringCutter(std::string);

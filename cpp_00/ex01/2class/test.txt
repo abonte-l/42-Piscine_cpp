@@ -1,56 +1,50 @@
 add
 Anne-Marie
 BONTE-BUREAU
-a
-a
-a
+AnMa
+0123456789
+Blah Blah BLAH
 add
-b
-b
-b
-b
-b
+Louis
+DURAND
+-
+0123456789
+Blah Blah BLAH
 add
-c
-c
-c
-c
-c
+Laurine
+MORIGAULT-COUTANT
+Lolo
+0123456789
+Blah Blah BLAH
 add
-d
-d
-d
-d
-d
+Amine
+KADER
+-
+0123456789
+Blah Blah BLAH
 add
-e
-e
-e
-e
-e
+Alexandre
+BUREAU
+Alex
+0123456789
+Blah Blah BLAH
 add
-f
-f
-f
-f
-f
+Loane
+COUTANT
+-
+0123456789
+Blah Blah BLAH
 add
-g
-g
-g
-g
-g
+Virginie
+LESAUX
+Kirginie
+0123456789
+Blah Blah BLAH
 add
-h
-h
-h
-h
-h
+Marie-Emilie
+LELOUTRE
+Marie
+0123456789
+Blah Blah BLAH
 search
-add
-i
-i
-i
-i
-i
-search
+exit
