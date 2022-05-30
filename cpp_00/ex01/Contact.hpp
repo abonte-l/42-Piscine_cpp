@@ -1,27 +1,35 @@
-#ifndef CONTACT_CLASS_H
-# define CONTACT_CLASS_H
+#ifndef CONTACT_H
+# define CONTACT_H
 
 #include <string>
 #include <iostream>
 
+
 class	Contact {
-
-	public:
-	Contact();
-	~Contact();
-
-	void addEntry(std::string);
-	void deleteEntry(std::string);
-	void displayEntry(std::string);
-
 	private:
-	int m_index;
-	int m_indexCreation;
-	std::string m_firstName;
-	std::string m_lastName;
-	std::string m_nickName;
-	std::string m_phoneNumber;
-	std::string m_darkestSecret;
+		struct contactData
+		{
+			int _index;
+			int _indexCreation;
+			std::string _firstName;
+			std::string _lastName;
+			std::string _nickName;
+			std::string _phoneNumber;
+			std::string _darkestSecret;
+		};
+
+		int _indexGen;
+		struct contactData data[8];
+		
+	public:
+		Contact();
+		~Contact();
+
+		void addEntry();
+		void deleteEntry(std::string);
+		void displayEntry(std::string);
 }; 
+void	homeDisplay();
+int		commandCollect();
 
 #endif
