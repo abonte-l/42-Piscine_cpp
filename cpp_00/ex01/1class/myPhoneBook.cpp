@@ -1,9 +1,12 @@
 #include "Contact.hpp"
+#include "PhoneBook.hpp"
 
+#include "Contact.hpp"
 
 int	main() {
 
 	Contact contact;
+
 	homeDisplay();
 	int command = 0;
 	do {

@@ -38,6 +38,42 @@ void	Contact::addEntry() {
 		std::cin >> _data[index2Modify]._darkestSecret;
 		++_indexGen;
 	}
+
+
+	// if (_indexGen > 8 ) {
+	// 	int index2Modify = _indexGen % 8;
+	// 	std::cout << "Enter contact's firstname : ";
+	// 	std::getline(std::cin, _data[index2Modify]._firstName);
+	// 	std::cout << "Enter contact's lastname : ";
+	// 	std::getline(std::cin, _data[index2Modify]._lastName);
+	// 	std::cout << "Enter contact's nickname : ";
+	// 	std::getline(std::cin, _data[index2Modify]._nickName);
+	// 	std::cout << "Enter contact's phone number : ";
+	// 	std::getline(std::cin, _data[index2Modify]._phoneNumber);
+	// 	std::cout << "Enter contact's darkest secret : ";
+	// 	std::getline(std::cin, _data[index2Modify]._darkestSecret);
+	// 	std::cout  << std::endl;
+	// 	++_indexGen;
+	// }
+	
+	// else if (_indexGen <= 8 && _indexGen >= 0) {	
+		// ++_indexCount;
+		// _data[_indexGen - 1]._index = _indexGen;
+		// std::cout << "Enter contact's firstname : ";
+		// std::getline(std::cin, _data[_indexGen]._firstName);
+		// std::cout << "Enter contact's lastname : ";
+		// std::getline(std::cin, _data[_indexGen]._lastName);
+		// std::cout << "Enter contact's nickname : ";
+		// std::getline(std::cin, _data[_indexGen]._nickName);
+		// std::cout << "Enter contact's phone number : ";
+		// std::getline(std::cin, _data[_indexGen]._phoneNumber);
+		// std::cout << "Enter contact's darkest secret : ";
+		// std::getline(std::cin, _data[_indexGen]._darkestSecret);
+		// std::cout  << std::endl;
+		// ++_indexGen;
+		// std::cout << "indexGen = " << _indexGen << std::endl;
+		// std::cout << "indexCount = " << _indexCount << std::endl;
+	// }
 }
 
 void Contact::displayFirstLine() {
