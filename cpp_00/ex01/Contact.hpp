@@ -10,7 +10,6 @@ class	Contact {
 		struct contactData
 		{
 			int _index;
-			int _indexCreation;
 			std::string _firstName;
 			std::string _lastName;
 			std::string _nickName;
@@ -19,14 +18,13 @@ class	Contact {
 		};
 
 		int _indexGen;
-		struct contactData data[8];
+		struct contactData _data[8];
 		
 	public:
 		Contact();
 		~Contact();
 
 		void addEntry();
-		void deleteEntry(std::string);
 		void displayEntry(std::string);
 }; 
 void	homeDisplay();
