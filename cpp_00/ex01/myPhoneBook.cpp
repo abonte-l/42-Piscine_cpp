@@ -12,6 +12,7 @@ int	main() {
 	if (command == 1) {
 		std::cout << "ADDING A CONTACT" << std::endl;
 		contact.addEntry();
+		contact.displayEntry();
 	}
 	else if (command == 2) {
 		std::cout << "SEARCH ENGINE" << std::endl;

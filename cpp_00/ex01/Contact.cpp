@@ -40,6 +40,40 @@ void	Contact::addEntry() {
 	}
 }
 
-void	Contact::displayEntry(std::string) {
+void Contact::displayFirstLine() {
+	std::cout << std::setfill('-');
+	for (int i = 0; i < 4; ++i)
+		std::cout << "+" << std::setw(10) << "";
+	std::cout << "+" << std::endl << std::setfill(' ');
+	std::cout << "|" << std::setw(10) << "INDEX";
+	std::cout << "|" << std::setw(10) << "FIRSTNAME";
+	std::cout << "|" << std::setw(10) << "LASTNAME";
+	std::cout << "|" << std::setw(10) << "NICKNAME";
+	std::cout << "|" << std::endl;
+	std::cout << std::setfill('-');
+	for (int i = 0; i < 4; ++i)
+		std::cout << "+" << std::setw(10) << "";
+	std::cout << "+" << std::endl << std::setfill(' ');
+}
 
+std::string Contact::stringCutter(std::string str) {
+	if (str.length() <= 10)
+		return(str);
+	str = str.substr(0, 8) + ".";
+	return(str);
+}
+
+void Contact::displayAll() {
+	for (int i = 1; i <= 8; ++i) {
+		std::cout << "|" << std::setw(10) << _data[i]._index;
+		std::cout << "|" << std::setw(10) << stringCutter(_data[i]._firstName);
+		std::cout << "|" << std::setw(10) << stringCutter(_data[i]._lastName);
+		std::cout << "|" << std::setw(10) << stringCutter(_data[i]._nickName);
+		std::cout << "|" << std::endl;
+	}
+
+}
+
+void	Contact::displayEntry() {
+	
 }

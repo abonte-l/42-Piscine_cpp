@@ -3,6 +3,7 @@
 
 #include <string>
 #include <iostream>
+#include <iomanip>
 
 
 class	Contact {
@@ -25,7 +26,10 @@ class	Contact {
 		~Contact();
 
 		void addEntry();
-		void displayEntry(std::string);
+		void displayEntry();
+		void displayFirstLine();
+		void displayAll();
+		std::string stringCutter(std::string);
 }; 
 void	homeDisplay();
 int		commandCollect();

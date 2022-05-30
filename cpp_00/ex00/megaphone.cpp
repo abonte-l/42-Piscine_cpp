@@ -2,9 +2,9 @@
 
 int	main(int ac, char **av)	{
 	if (ac != 1) {
-		for (int i=1; i<ac; i++) {
+		for (int i=1; i<ac; ++i) {
 			std::string data=av[i];
-			for (int j=0; data[j]!=0; j++) {
+			for (int j=0; data[j]!=0; ++j) {
 				data[j] = toupper(data[j]);
 			}
 			std::cout << data;
