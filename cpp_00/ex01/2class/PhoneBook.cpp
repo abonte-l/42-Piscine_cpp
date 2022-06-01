@@ -11,17 +11,26 @@ void	PhoneBook::addEntry() {
 
 	int i = (_indexGen - 1) % 8;
 	_data[i]._index = i + 1;
-	std::cout << "i = " << i << std::endl;
+	do {
 	std::cout << "Enter contact's firstname : ";
 	std::getline(std::cin, _data[i]._firstName);
+	} while (_data[i]._firstName.length() == 0);
+	do {
 	std::cout << "Enter contact's lastname : ";
 	std::getline(std::cin, _data[i]._lastName);
+	} while (_data[i]._lastName.length() == 0);
+	do {
 	std::cout << "Enter contact's nickname : ";
 	std::getline(std::cin, _data[i]._nickName);
+	} while (_data[i]._nickName.length() == 0);
+	do {
 	std::cout << "Enter contact's phone number : ";
 	std::getline(std::cin, _data[i]._phoneNumber);
+	} while (_data[i]._phoneNumber.length() == 0);
+	do {
 	std::cout << "Enter contact's darkest secret : ";
 	std::getline(std::cin, _data[i]._darkestSecret);
+	} while (_data[i]._darkestSecret.length() == 0);
 	std::cout  << std::endl;
 	++_indexGen;
 	if (_indexCount < 8)
@@ -38,6 +47,13 @@ void PhoneBook::displayFirstLine() {
 	std::cout << "|" << std::setw(10) << "LASTNAME";
 	std::cout << "|" << std::setw(10) << "NICKNAME";
 	std::cout << "|" << std::endl;
+	std::cout << std::setfill('-');
+	for (int i = 0; i < 4; ++i)
+		std::cout << "+" << std::setw(10) << "";
+	std::cout << "+" << std::endl << std::setfill(' ');
+}
+
+void PhoneBook::displayLastLine() {
 	std::cout << std::setfill('-');
 	for (int i = 0; i < 4; ++i)
 		std::cout << "+" << std::setw(10) << "";
@@ -66,7 +82,7 @@ void PhoneBook::displayAll() {
 		std::cout << "|" << std::setw(10) << stringCutter(_data[i]._nickName);
 		std::cout << "|" << std::endl;
 	}
-
+	displayLastLine();
 }
 
 void	PhoneBook::displayEntry(int i) {

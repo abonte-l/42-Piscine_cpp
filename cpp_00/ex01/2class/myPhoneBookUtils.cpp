@@ -1,4 +1,15 @@
-#include "Contact.hpp"
+#include "PhoneBook.hpp"
+
+void 	searchDisplay() {
+	std::string selection;
+	std::cout << "SEARCH ENGINE" << std::endl;
+	repertoire.displayAll();
+	std::cout << std::endl;
+	std::cout << "SELECT THE CONTACT TO DISPLAY" << std::endl;
+	std::getline(std::cin, selection);
+	int i = std::stoi(selection);
+	repertoire.displayEntry(i -1);
+}
 
 void	homeDisplay() {
 	std::cout << std::endl;
@@ -8,27 +19,6 @@ void	homeDisplay() {
 	std::cout << std::endl;
 	std::cout << "ADD : save new contact" << std::endl;
 	std::cout << "SEARCH : display a contact" << std::endl;
-	std::cout << "EXIT : close MY_PHONE_BOOK" << std::endl;
+	std::cout << "EXIT : close MY_AWESOME_PHONE_BOOK" << std::endl;
 	std::cout << std::endl;
-}
-
-int		commandCollect() {
-	std::string commandStr;
-	int commandNum = 0;
-	std::cout << "Enter your command : ";
-	getline(std::cin, commandStr);
-	std::cout << std::endl;
-	for (int j=0; commandStr[j]!=0; j++) {
-				commandStr[j] = toupper(commandStr[j]);
-			}
-	if (commandStr == "ADD") {
-		commandNum = 1;
-	}
-	else if (commandStr == "SEARCH") {
-		commandNum = 2;
-	}
-	else if (commandStr == "EXIT") {
-		commandNum = 3;
-	}
-	return commandNum;
 }

@@ -1,9 +1,10 @@
 NAME 		=	myPhoneBook
 
-SRCS		=	Contact.cpp		myPhoneBook.cpp		PhoneBook.cpp
+SRCS		=	Contact.cpp		myPhoneBook.cpp		myPhoneBookUtils.cpp \
+				PhoneBook.cpp
 CC			=	c++
 
-CFLAGS		=	-Wall -Wextra -Werror -g #-std=c++98 
+CFLAGS		=	-Wall -Wextra -Werror #-g -std=c++98 
 
 OBJS		=	$(SRCS:.cpp=.o)
 
