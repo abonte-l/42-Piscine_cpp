@@ -17,7 +17,6 @@ class	PhoneBook {
 		~PhoneBook();
 
 		Contact _data[8];
-		int _indexPub;
 
 		void addEntry();
 		void displayEntry(int);
@@ -25,10 +24,13 @@ class	PhoneBook {
 		void displayLastLine();
 		void displayAll();
 		std::string stringCutter(std::string);
+		int getIndex ();
 		
 }; 
 
 void	homeDisplay();
-void 	searchDisplay();
+void 	addDisplay(PhoneBook);
+// void 	searchDisplay(PhoneBook);
+// void 	exitDisplay(PhoneBook);
 
 #endif

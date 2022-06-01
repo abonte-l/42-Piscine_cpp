@@ -1,6 +1,6 @@
 #include "PhoneBook.hpp"
 
-PhoneBook::PhoneBook() : _indexGen(1), _indexCount(0), _indexPub(0) {
+PhoneBook::PhoneBook() : _indexGen(1), _indexCount(0) {
 }
 
 PhoneBook::~PhoneBook() {
@@ -35,7 +35,6 @@ void	PhoneBook::addEntry() {
 	++_indexGen;
 	if (_indexCount < 8){
 		++_indexCount;
-		_indexPub = _indexCount;
 	}
 		
 }
@@ -94,4 +93,8 @@ void	PhoneBook::displayEntry(int i) {
 	std::cout << "NICKNAME : "<< _data[i]._nickName << std::endl;
 	std::cout << "LASTNAME : "<< _data[i]._phoneNumber << std::endl;
 	std::cout << "NICKNAME : "<< _data[i]._darkestSecret << std::endl;
+}
+
+int PhoneBook::getIndex() {
+	return (_indexCount);
 }
