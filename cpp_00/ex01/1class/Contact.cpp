@@ -57,7 +57,7 @@ void	Contact::addEntry() {
 	// }
 	
 	// else if (_indexGen <= 8 && _indexGen >= 0) {	
-		// ++_indexCount;
+		// ++_size;
 		// _data[_indexGen - 1]._index = _indexGen;
 		// std::cout << "Enter contact's firstname : ";
 		// std::getline(std::cin, _data[_indexGen]._firstName);
@@ -72,7 +72,7 @@ void	Contact::addEntry() {
 		// std::cout  << std::endl;
 		// ++_indexGen;
 		// std::cout << "indexGen = " << _indexGen << std::endl;
-		// std::cout << "indexCount = " << _indexCount << std::endl;
+		// std::cout << "indexCount = " << _size << std::endl;
 	// }
 }
 

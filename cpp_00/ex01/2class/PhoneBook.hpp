@@ -10,7 +10,7 @@
 class	PhoneBook {
 	private:
 		int _indexGen;
-		int _indexCount;
+		int _size;
 		
 	public:
 		PhoneBook();

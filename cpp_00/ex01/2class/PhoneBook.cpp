@@ -1,6 +1,6 @@
 #include "PhoneBook.hpp"
 
-PhoneBook::PhoneBook() : _indexGen(1), _indexCount(0) {
+PhoneBook::PhoneBook() : _indexGen(1), _size(0) {
 }
 
 PhoneBook::~PhoneBook() {
@@ -33,8 +33,8 @@ void	PhoneBook::addEntry() {
 	} while (_data[i]._darkestSecret.length() == 0);
 	std::cout  << std::endl;
 	++_indexGen;
-	if (_indexCount < 8){
-		++_indexCount;
+	if (_size < 8){
+		++_size;
 	}
 		
 }
@@ -71,13 +71,13 @@ std::string PhoneBook::stringCutter(std::string str) {
 
 void PhoneBook::displayAll() {
 	
-	if (_indexCount == 0) {
+	if (_size == 0) {
 		std::cout << std::endl;
 		std::cout << "NO CONTACTS TO DISPLAY" << std::endl;
 		std::cout << std::endl;
 	}
 	displayFirstLine();
-	for (int i = 0; i < _indexCount; i++) {
+	for (int i = 0; i < _size; i++) {
 		std::cout << "|" << std::setw(10) << _data[i]._index;
 		std::cout << "|" << std::setw(10) << stringCutter(_data[i]._firstName);
 		std::cout << "|" << std::setw(10) << stringCutter(_data[i]._lastName);
@@ -96,5 +96,5 @@ void	PhoneBook::displayEntry(int i) {
 }
 
 int PhoneBook::getIndex() {
-	return (_indexCount);
+	return (_size);
 }
