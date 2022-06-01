@@ -16,7 +16,16 @@ int	main() {
 			repertoire.addEntry();
 		}
 		else if (command == "SEARCH") {
-			searchDisplay();
+			std::string selection;
+			std::cout << "SEARCH ENGINE" << std::endl;
+			repertoire.displayAll();
+			std::cout << std::endl;
+			do {
+			std::cout << "SELECT THE CONTACT TO DISPLAY BY ENTER IT'S INDEX" << std::endl;
+			std::getline(std::cin, selection);
+			} while (!(std::stoi(selection) <= repertoire._indexPub && std::stoi(selection) >= 1));
+			int i = std::stoi(selection);
+			repertoire.displayEntry(i -1);
 		}
 		else if (command == "EXIT") { 
 			std::cout << "EXITING..." << std::endl;

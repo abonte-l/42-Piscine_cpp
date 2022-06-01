@@ -1,19 +1,13 @@
 #include "PhoneBook.hpp"
 
 void 	searchDisplay() {
-	std::string selection;
-	std::cout << "SEARCH ENGINE" << std::endl;
-	repertoire.displayAll();
-	std::cout << std::endl;
-	std::cout << "SELECT THE CONTACT TO DISPLAY" << std::endl;
+	std::cout << "SELECT THE CONTACT TO DISPLAY BY ENTER IT'S INDEX" << std::endl;
 	std::getline(std::cin, selection);
-	int i = std::stoi(selection);
-	repertoire.displayEntry(i -1);
 }
 
 void	homeDisplay() {
 	std::cout << std::endl;
-	std::cout << "WELCOME ON MY_AWESOME_PHONE_BOOK" << std::endl;
+	std::cout << "🌼 WELCOME ON MY_AWESOME_PHONE_BOOK 🌼" << std::endl;
 	std::cout << std::endl;
 	std::cout << "Available Commands :" << std::endl;
 	std::cout << std::endl;

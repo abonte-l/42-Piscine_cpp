@@ -17,6 +17,7 @@ class	PhoneBook {
 		~PhoneBook();
 
 		Contact _data[8];
+		int _indexPub;
 
 		void addEntry();
 		void displayEntry(int);
