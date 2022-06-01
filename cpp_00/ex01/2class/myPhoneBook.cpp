@@ -15,20 +15,10 @@ int	main() {
 			addDisplay(repertoire); 
 		}
 		else if (command == "SEARCH") {
-			std::string selection;
-			std::cout << "SEARCH ENGINE" << std::endl;
-			repertoire.displayAll();
-			std::cout << std::endl;
-			do {
-			std::cout << "SELECT THE CONTACT TO DISPLAY BY ENTER IT'S INDEX" << std::endl;
-			std::getline(std::cin, selection);
-			} while (!(std::stoi(selection) <= repertoire.getIndex() && std::stoi(selection) >= 1));
-			int i = std::stoi(selection);
-			repertoire.displayEntry(i -1);
+			searchDisplay(repertoire);
 		}
 		else if (command == "EXIT") { 
-			std::cout << std::endl << "EXITING..." << std::endl;
-			std::cout << std::endl << "🌺 \033[1;31mBYE LOVELY\033[0;1m 🌺" << std::endl;
+			exitDisplay(repertoire);
 			break;
 		}
 	}

@@ -29,8 +29,8 @@ class	PhoneBook {
 }; 
 
 void	homeDisplay();
-void 	addDisplay(PhoneBook);
-// void 	searchDisplay(PhoneBook);
-// void 	exitDisplay(PhoneBook);
+void 	addDisplay(PhoneBook &);
+void 	searchDisplay(PhoneBook &);
+void 	exitDisplay(PhoneBook &);
 
 #endif
