@@ -23,10 +23,6 @@ int	main() {
 	zombieRand02->announce();
 	delete(zombieRand02);
 
-	
-
-
-	// zombie01.announce();
-	
+	randomChump(zombieName[2]);
 
 }

@@ -23,10 +23,7 @@ Zombie* newZombie(std::string name) {
 	return (newZombie);
 }
 
-// void ramdomChump(std::string name) {
-
-// }
-
-// std::string Zombie::getName() {
-// 	return (_name);
-// }
+void randomChump(std::string name) {
+	Zombie newZombie(name);
+	newZombie.announce();
+}
