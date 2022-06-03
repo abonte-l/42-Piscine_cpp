@@ -1,7 +1,7 @@
 NAME 		=	zombiefier
 
-SRCS		=	main.cpp		Zombie.cpp		#myPhoneBookUtils.cpp \
-				#Zombie.cpp
+SRCS		=	main.cpp		newZombie.cpp 		randomChump.cpp\
+				Zombie.cpp
 CC			=	c++
 
 CFLAGS		=	-Wall -Wextra -Werror #-g -std=c++98 
