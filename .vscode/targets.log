@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun  1 15:36:56 2022
+# Make data base, printed on Fri Jun  3 09:10:44 2022
 
 # Variables
 
@@ -37,7 +37,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /mnt/nfs/homes/abonte-l/Desktop/42-Piscine_cpp
+CURDIR := /sgoinfre/goinfre/Perso/abonte-l/42_cursus/42-Piscine_cpp
 # makefile
 SHELL = /bin/sh
 # environment
@@ -47,7 +47,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 9:66073
+JOURNAL_STREAM = 9:128667
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -67,15 +67,15 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/37314/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 4761
+MANAGERPID = 23834
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/37314/vscode-ipc-1e671577-b6cf-492a-b540-4a8a64eed4bf.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/37314/vscode-ipc-76fa3e7c-c1a2-4525-ac73-3ada136ed8a1.sock
 # environment
 VSCODE_CWD = /mnt/nfs/homes/abonte-l
 # environment
 XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_37314_sQjnkT
+KRB5CCNAME = FILE:/tmp/krb5cc_37314_nctSHR
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -85,7 +85,7 @@ GPG_AGENT_INFO = /run/user/37314/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/e1r6p11.42.fr:@/tmp/.ICE-unix/5269,unix/e1r6p11.42.fr:/tmp/.ICE-unix/5269
+SESSION_MANAGER = local/e1r6p11.42.fr:@/tmp/.ICE-unix/24331,unix/e1r6p11.42.fr:/tmp/.ICE-unix/24331
 # environment
 XDG_RUNTIME_DIR = /run/user/37314
 # environment
@@ -95,7 +95,7 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = bbd817d88dca48258d831f4e9e9c72c0
+INVOCATION_ID = 375a5001942648cb85ce92b66c0d9865
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -107,7 +107,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/37314/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 6298
+GIO_LAUNCHED_DESKTOP_FILE_PID = 28351
 # automatic
 %F = $(notdir $%)
 # environment
@@ -115,11 +115,11 @@ DISPLAY = :0
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /mnt/nfs/homes/abonte-l/Desktop/42-Piscine_cpp
+PWD = /sgoinfre/goinfre/Perso/abonte-l/42_cursus/42-Piscine_cpp
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 5231
+SSH_AGENT_PID = 24291
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -133,7 +133,7 @@ VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/abonte-l/.config/Code/CachedData/c3511e6
 # environment
 LOGNAME = abonte-l
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 ZSH = /mnt/nfs/homes/abonte-l/.oh-my-zsh
 # environment
@@ -225,7 +225,7 @@ LANG = C
 # environment
 DOCKER_HOST = unix:///run/user/37314/docker.sock
 # environment
-VSCODE_PID = 6298
+VSCODE_PID = 28351
 # variable set hash-table stats:
 # Load=107/1024=10%, Rehash=0, Collisions=7/129=5%
 
@@ -235,7 +235,7 @@ VSCODE_PID = 6298
 
 # Directories
 
-# . (device 57, inode 234934278): 7 files, no impossibilities.
+# . (device 57, inode 30941849): 7 files, no impossibilities.
 
 # 7 files, no impossibilities in 1 directories.
 
@@ -294,6 +294,6 @@ GNUmakefile:
 # strcache performance: lookups = 18 / hit rate = 16%
 # hash-table stats:
 # Load=15/8192=0%, Rehash=0, Collisions=1/18=6%
-# Finished Make data base on Wed Jun  1 15:36:56 2022
+# Finished Make data base on Fri Jun  3 09:10:44 2022
 
  
