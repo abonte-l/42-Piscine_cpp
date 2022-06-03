@@ -1,6 +1,6 @@
 NAME 		=	zombiefier
 
-SRCS		=	main.cpp		newZombie.cpp 		randomChump.cpp\
+SRCS		=	main.cpp		newZombie.cpp 		randomChump.cpp \
 				Zombie.cpp
 CC			=	c++
 
