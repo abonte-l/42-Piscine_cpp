@@ -1,16 +1,12 @@
 #include "Zombie.hpp"
 
-const std::string zombiesRandNAme[] {
-	"prout01",
-	"prout02",
-	"prout03",
-	"prout04",
-};
-
-const int zombieRandNameSize = (sizeof(zombiesRandNAme) / sizeof(std::string));
 
 Zombie::Zombie() {
-		_name = zombiesRandNAme[rand() % zombieRandNameSize];
+		
+};
+
+Zombie::Zombie(std::string name) : _name(name) {
+		
 };
 
 Zombie::~Zombie() {
@@ -22,11 +18,15 @@ void Zombie::announce(void) {
 	std::cout << "🧟‍♀️" << _name << " BraiiiiiiinnnzzzZ... " << "🧟‍♀️" << std::endl;
 }
 
-Zombie* newZombie(std::string _name) {
-
+Zombie* newZombie(std::string name) {
+	Zombie *newZombie = new Zombie(name);
+	return (newZombie);
 }
 
-void ramdomChump(std::string _name) {
+// void ramdomChump(std::string name) {
 
-}
+// }
 
+// std::string Zombie::getName() {
+// 	return (_name);
+// }
