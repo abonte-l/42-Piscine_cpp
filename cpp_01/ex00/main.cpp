@@ -1,9 +1,10 @@
 #include "Zombie.hpp"
 
-int main() {
+int	main() {
 
-	Zombie zombieTest;
+	Zombie zombie01;
 
+	zombie01.announce();
 	
 
 }
