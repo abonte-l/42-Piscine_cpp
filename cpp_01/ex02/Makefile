@@ -1,4 +1,4 @@
-NAME 		=	zombiefier
+NAME 		=	brainizer
 
 SRCS		=	main.cpp
 
