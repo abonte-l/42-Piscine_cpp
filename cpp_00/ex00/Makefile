@@ -2,21 +2,32 @@ NAME 		=	megaphone
 
 SRCS		=	megaphone.cpp
 
+HDRS		=	
+
 CC			=	c++
 
-CFLAGS		=	-Wall -Wextra -Werror #-std=c++98
+CFLAGS		=	-Wall -Wextra -Werror #-g -std=c++98 
 
-OBJS		=	$(SRCS:.cpp=.o)
+OBJSDIR		=	objs/
+
+OBJS		=	$(addprefix $(OBJSDIR), $(SRCS:.cpp=.o))
 
 all: $(NAME)
 
 $(NAME)	: $(OBJS)
-	@$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+	@$(CC) -o $(NAME) $(OBJS)
 	@echo "Compilation of \033[33;1m$(NAME)\033[0;1m: [\033[1;32mOK\033[0;1m]\033[0m"
 
+$(OBJSDIR)%.o:	%.cpp
+				$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJS) : $(HDRS) Makefile | $(OBJSDIR)
+
+$(OBJSDIR) :
+			mkdir $@
 
 clean:
-	@rm -f $(OBJS)
+	@rm -rf $(OBJS) $(OBJSDIR)
 	@echo "\033[33;1m$(NAME)\033[0;1m: objects deleted\033[0m"
 
 fclean:	clean
@@ -25,4 +36,7 @@ fclean:	clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+run: re 
+	@./$(NAME)
+
+.PHONY: all clean fclean re run
