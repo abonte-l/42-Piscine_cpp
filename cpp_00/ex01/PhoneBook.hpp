@@ -24,7 +24,7 @@ class	PhoneBook {
 		void displayLastLine();
 		void displayAll();
 		std::string stringCutter(std::string);
-		int getIndex ();
+		int getSize ();
 		
 }; 
 

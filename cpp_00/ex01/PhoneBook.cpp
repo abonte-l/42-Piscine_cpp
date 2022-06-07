@@ -95,6 +95,6 @@ void	PhoneBook::displayEntry(int i) {
 	std::cout << "NICKNAME : "<< _data[i]._darkestSecret << std::endl;
 }
 
-int PhoneBook::getIndex() {
+int PhoneBook::getSize() {
 	return (_size);
 }
