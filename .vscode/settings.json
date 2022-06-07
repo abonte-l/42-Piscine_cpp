@@ -52,5 +52,8 @@
 		"chrono": "cpp",
 		"ratio": "cpp"
 	},
-	"C_Cpp.dimInactiveRegions": false
+	"C_Cpp.dimInactiveRegions": false,
+	"C_Cpp.autocomplete": "Default",
+	"C_Cpp.editor.wordBasedSuggestions": true,
+	"C_Cpp.autocompleteAddParentheses": true
 }
