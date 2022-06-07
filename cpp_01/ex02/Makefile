@@ -1,6 +1,6 @@
 NAME 		=	zombiefier
 
-SRCS		=	main.cpp		Zombie.cpp		zombieHorde.cpp
+SRCS		=	main.cpp
 
 CC			=	c++
 
