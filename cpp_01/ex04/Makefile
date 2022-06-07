@@ -1,8 +1,8 @@
 NAME 		=	replaceIt
 
-SRCS		=	main.cpp		
+SRCS		=	main.cpp		ReplaceIt.cpp
 
-HDRS		=	
+HDRS		=	ReplaceIt.hpp
 
 CC			=	c++
 
