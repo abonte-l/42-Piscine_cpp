@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun  3 14:24:15 2022
+# Make data base, printed on Tue Jun  7 12:25:30 2022
 
 # Variables
 
@@ -41,13 +41,11 @@ CURDIR := /sgoinfre/goinfre/Perso/abonte-l/42_cursus/42-Piscine_cpp
 # makefile
 SHELL = /bin/sh
 # environment
-GDM_LANG = en
+VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-_ = /usr/share/code/code
-# environment
-JOURNAL_STREAM = 9:128667
+JOURNAL_STREAM = 9:1956463
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -55,7 +53,7 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+IM_CONFIG_PHASE = 1
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -63,19 +61,21 @@ MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
 XDG_DATA_DIRS = /usr/share/gnome:/usr/share/ubuntu:/mnt/nfs/homes/abonte-l/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/37314/bus
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/37314/bus,guid=bb643fa43cfbbba40164dc21629f024b
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 23834
+_ = /usr/bin/code
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/37314/vscode-ipc-f5fcc4c3-68a8-4100-9686-dcb69ea0fd3a.sock
+MANAGERPID = 521369
 # environment
-VSCODE_CWD = /mnt/nfs/homes/abonte-l
+VSCODE_IPC_HOOK_EXTHOST = /run/user/37314/vscode-ipc-b3ee3634-6ab8-4a8b-ad24-272bfe2e36a6.sock
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+VSCODE_CWD = /sgoinfre/goinfre/Perso/abonte-l/42_cursus/42-Piscine_cpp
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_37314_nctSHR
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session8
+# environment
+KRB5CCNAME = FILE:/tmp/krb5cc_37314_pcK6MV
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -85,7 +85,7 @@ GPG_AGENT_INFO = /run/user/37314/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/e1r6p11.42.fr:@/tmp/.ICE-unix/24331,unix/e1r6p11.42.fr:/tmp/.ICE-unix/24331
+SESSION_MANAGER = local/e2r6p8.clusters.42paris.fr:@/tmp/.ICE-unix/521747,unix/e2r6p8.clusters.42paris.fr:/tmp/.ICE-unix/521747
 # environment
 XDG_RUNTIME_DIR = /run/user/37314
 # environment
@@ -95,19 +95,19 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 375a5001942648cb85ce92b66c0d9865
+INVOCATION_ID = 27d82e4c5c2a44b3a813809f9d85f41c
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
 XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/abonte-l
 # environment
-LS_COLORS = 
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 # environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/37314/keyring/ssh
-# environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 28351
 # automatic
 %F = $(notdir $%)
 # environment
@@ -115,11 +115,11 @@ DISPLAY = :0
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /sgoinfre/goinfre/Perso/abonte-l/42_cursus/42-Piscine_cpp
+PWD = /mnt/nfs/homes/abonte-l/sgoinfre/42_cursus/42-Piscine_cpp
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 24291
+SSH_AGENT_PID = 521668
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -128,6 +128,8 @@ GTK_MODULES = gail:atk-bridge
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /mnt/nfs/homes/abonte-l
+# environment
+VSCODE_CLI = 1
 # environment
 VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/abonte-l/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
@@ -144,6 +146,8 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 MAKELEVEL := 0
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -151,9 +155,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SHLVL = 0
-# environment
-IM_CONFIG_PHASE = 1
+SHLVL = 1
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -171,13 +173,11 @@ LESS = -R
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /mnt/nfs/homes/abonte-l
+OLDPWD = /mnt/nfs/homes/abonte-l/sgoinfre/42_cursus
 # default
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
-# environment
-LANGUAGE = en
 # environment
 XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
@@ -207,27 +207,33 @@ PAGER = less
 # environment
 LC_ALL = C
 # environment
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+DBUS_STARTER_BUS_TYPE = session
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/128e590f_3192_4307_b2da_ab43e10944a2
 # automatic
 ^F = $(notdir $^)
+# environment
+GNOME_TERMINAL_SERVICE = :1.181
 # default
 SUFFIXES := 
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# environment
-GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # environment
 LANG = C
 # environment
+TERM = xterm-256color
+# environment
 DOCKER_HOST = unix:///run/user/37314/docker.sock
 # environment
-VSCODE_PID = 28351
+VSCODE_PID = 540513
+# environment
+DBUS_STARTER_ADDRESS = unix:path=/run/user/37314/bus,guid=bb643fa43cfbbba40164dc21629f024b
 # variable set hash-table stats:
-# Load=107/1024=10%, Rehash=0, Collisions=7/129=5%
+# Load=110/1024=11%, Rehash=0, Collisions=10/132=8%
 
 # Pattern-specific Variable Values
 
@@ -283,17 +289,17 @@ GNUmakefile:
 # Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
- 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
+ 
 # strcache buffers: 1 (0) / strings = 15 / storage = 127 B / avg = 8 B
 # current buf: size = 8162 B / used = 127 B / count = 15 / avg = 8 B
 
 # strcache performance: lookups = 18 / hit rate = 16%
 # hash-table stats:
 # Load=15/8192=0%, Rehash=0, Collisions=1/18=6%
-# Finished Make data base on Fri Jun  3 14:24:15 2022
+# Finished Make data base on Tue Jun  7 12:25:30 2022
 
  
