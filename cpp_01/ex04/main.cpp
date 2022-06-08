@@ -1,8 +1,5 @@
 #include "ReplaceIt.hpp"
 
-//remplacement ok
-//reste gestion des fichiers
-
 int		main(int ac, char **av) {
 
 	if ( ac != 4) {
