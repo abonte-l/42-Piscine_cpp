@@ -3,6 +3,12 @@
 obj
 a.out*
 span
+replaceIt
+megaphone
+myPhoneBook
+zombiefier
+brainizer
+fighting
 
 # libraries
 *.a

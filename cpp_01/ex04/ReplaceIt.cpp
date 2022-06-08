@@ -10,5 +10,6 @@ std::string	replaceIt(std::string str, std::string s1, std::string s2) {
 		result.insert(startS1, s2);
 		startPos = startS1 + s2.length();
 	}
+	result = result + "\n";
 	return (result);
 }
