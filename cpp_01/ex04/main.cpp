@@ -4,7 +4,7 @@ int		main(int ac, char **av) {
 
 	if ( ac != 4) {
 		std::cerr << "Error: Wrong Arugments!" << std::endl;
-		return (-1);
+		return (-3);
 	}
 	else {
 		std::string fileName = av[1];
@@ -13,18 +13,18 @@ int		main(int ac, char **av) {
 		std::string s2 = av[3];
 		std::ifstream ifile(fileName);
 		if (! ifile.is_open()) {
-			std::cout << "Ouverture en lecture du fichier impossible !\n";
+			std::cout << "Ouverture en lecture du fichier impossible !" << std::endl;
 			return (-1);
 		}
 		else 
-			std::cout << "Ouverture en lecture du fichier réussie !\n";
+			std::cout << "Ouverture en lecture du fichier réussie !" << std::endl;
 		std::string str;
 		getline(ifile, str);
 		std::string sedStr = replaceIt(str, s1, s2);
 		std::ofstream ofile (fileNameRep);
 		if (! ofile.is_open()) {
-			std::cout << "Ouverture en écriture du fichier impossible !\n";
-			return -1;
+			std::cout << "Ouverture en écriture du fichier impossible !" << std::endl;
+			return (-1);
 		}
 		ofile << sedStr;
 		if (ofile.fail()) {
@@ -34,6 +34,6 @@ int		main(int ac, char **av) {
 		}
 		ofile.close();
 		ifile.close();
-		return 0;
+		return (0);
 	}
 }
