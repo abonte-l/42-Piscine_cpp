@@ -24,9 +24,13 @@ void Harl::complain(std::string level) {
 		&Harl::error
 	};
 	
-
-	(void)level;
-	// (*array[1])();
+	for (int i = 0; i < 4; i++) {
+		if (levels[i] == level)
+		{
+			(this->*array[i])();
+			return;
+		}
+	}
 }
 
 void Harl::debug() {
