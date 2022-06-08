@@ -8,6 +8,27 @@ Harl::~Harl() {
 
 }
 
+void Harl::complain(std::string level) {
+
+	std::string levels[] = {
+		"DEBUG",
+		"INFO",
+		"WARNING",
+		"ERROR",
+	};
+	
+	void (Harl::*array[])(void) = {
+		&Harl::debug,
+		&Harl::info,
+		&Harl::warning,
+		&Harl::error
+	};
+	
+
+	(void)level;
+	// (*array[1])();
+}
+
 void Harl::debug() {
 	std::cout << "I love having extra bacon for my 7XL-double-cheese-triple-pickle-special-ketchup burger. I really do!" << std::endl;
 }
@@ -21,9 +42,3 @@ void Harl::error(void) {
 	std::cout << "This is unacceptable! I want to speak to the manager now." << std::endl;
 }
 
-void complain(std::string level) {
-	(void (Harl::*array)(void))[4] = {debug, info, warning, error};
-
-	(void)level;
-	array[1]();
-}
