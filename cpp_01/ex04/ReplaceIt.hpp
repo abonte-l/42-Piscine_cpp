@@ -4,5 +4,6 @@
 #include <iostream>
 #include <fstream>
 
+std::string	replaceIt(std::string , std::string , std::string );
 
 #endif

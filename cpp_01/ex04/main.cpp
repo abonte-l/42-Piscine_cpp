@@ -1,8 +1,15 @@
 #include "ReplaceIt.hpp"
 
-int		main(int ac, char **av) {
-	//recuperer nom de fichier l'ouvrir avec std::fstream fs 
-	// fs.open 
-	//pour nouveau fichier apparemment open out
+//remplacement ok
+//reste gestion des fichiers
 
+int		main(int ac, char **av) {
+
+	(void) ac;
+	std::string str = av[1];
+	std::string s1 = av[2];
+	std::string s2 = av[3];
+	std::cout << str << " " << s1 << " " << s2 <<std::endl;
+	std::string sedStr = replaceIt(str, s1, s2);
+	std::cout << sedStr << " " << s1 << " " << s2 <<std::endl;
 }
