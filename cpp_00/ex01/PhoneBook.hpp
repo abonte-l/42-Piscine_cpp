@@ -11,26 +11,25 @@ class	PhoneBook {
 	private:
 		int _indexGen;
 		int _size;
+		Contact _data[8];
 		
 	public:
 		PhoneBook();
 		~PhoneBook();
 
-		Contact _data[8];
-
+		int getSize ();
+		void setData(int);
 		void addEntry();
-		void displayEntry(int);
+		void displayAll();
+		void displayDataEntry(int);
 		void displayFirstLine();
 		void displayLastLine();
-		void displayAll();
-		std::string stringCutter(std::string);
-		int getSize ();
-		
+		void displayDataOverview();
 }; 
 
 void	homeDisplay();
 void 	addDisplay(PhoneBook &);
 void 	searchDisplay(PhoneBook &);
-void 	exitDisplay(PhoneBook &);
+void 	exitDisplay();
 
 #endif

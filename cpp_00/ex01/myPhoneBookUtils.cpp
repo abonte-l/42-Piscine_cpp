@@ -1,4 +1,5 @@
 #include "PhoneBook.hpp"
+#include <cstdlib>
 
 void 	addDisplay(PhoneBook& repertoire) {
 	std::cout << "ADDING A CONTACT" << std::endl;
@@ -13,12 +14,12 @@ void 	searchDisplay(PhoneBook& repertoire) {
 	do {
 	std::cout << "SELECT THE CONTACT TO DISPLAY BY ENTER IT'S INDEX" << std::endl;
 	std::getline(std::cin, selection);
-	} while (!(std::stoi(selection) <= repertoire.getIndex() && std::stoi(selection) >= 1));
-	int i = std::stoi(selection);
-	repertoire.displayEntry(i -1);
+	} while (!(std::strtol(selection.data(), NULL, 10) <= repertoire.getSize() && std::strtol(selection.data(), NULL, 10) >= 1));
+	int i = std::strtol(selection.data(), NULL, 10);
+	repertoire.displayDataEntry(i -1);
 }
 
-void 	exitDisplay(PhoneBook& repertoire) {
+void 	exitDisplay() {
 	std::cout << std::endl << "EXITING..." << std::endl;
 	std::cout << std::endl << "🌺 \033[1;31mBYE LOVELY\033[0;1m 🌺" << std::endl;
 }

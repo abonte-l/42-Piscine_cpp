@@ -18,7 +18,7 @@ int	main() {
 			searchDisplay(repertoire);
 		}
 		else if (command == "EXIT") { 
-			exitDisplay(repertoire);
+			exitDisplay();
 			break;
 		}
 	}
