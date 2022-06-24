@@ -27,7 +27,7 @@ void 	exitDisplay() {
 
 void	homeDisplay() {
 	std::cout << std::endl;
-	std::cout << " 🌺 \033[1;31mWELCOME ON MY_AWESOME_PHONE_BOOK\033[0;1m 🌺" << std::endl;
+	std::cout << " 🌺 \033[1;31mWELCOME TO MY_AWESOME_PHONE_BOOK\033[0;1m 🌺" << std::endl;
 	std::cout << std::endl;
 	std::cout << "Available Commands :" << std::endl;
 	std::cout << std::endl;

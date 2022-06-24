@@ -46,6 +46,12 @@ LELOUTRE
 Marie
 0123456789
 Blah Blah BLAH
+add
+Marie-Emilie
+LELOUTRE
+Marie
+0123456789
+Blah Blah BLAH
 search
 1
 exit

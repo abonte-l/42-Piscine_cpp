@@ -20,7 +20,6 @@ class	Contact {
 		Contact();
 		~Contact();
 
-		int getIndex();
 		void setIndex(int);
 		void setContact();
 		void printAndCut(std::string);

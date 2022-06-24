@@ -1,10 +1,15 @@
 #include "PhoneBook.hpp"
 
 PhoneBook::PhoneBook() : _indexGen(1), _size(0) {
+
 }
 
 PhoneBook::~PhoneBook() {
 
+}
+
+int PhoneBook::getSize() {
+	return (_size);
 }
 
 void	PhoneBook::setData(int i) {
@@ -20,6 +25,23 @@ void	PhoneBook::addEntry() {
 	if (_size < 8){
 		++_size;
 	}
+}
+
+void PhoneBook::displayAll() {
+	if (_size == 0) {
+		std::cout << std::endl;
+		std::cout << "NO CONTACTS TO DISPLAY" << std::endl;
+		std::cout << std::endl;
+	}
+	else {
+		displayFirstLine();
+		displayDataOverview();
+		displayLastLine();
+	}
+}
+
+void PhoneBook::displayDataEntry(int i) {
+	_data[i].displayEntry();
 }
 
 void PhoneBook::displayFirstLine() {
@@ -49,26 +71,4 @@ void PhoneBook::displayDataOverview() {
 	for (int i = 0; i < _size; i++) {
 		_data[i].displayOverview();
 	}
-}
-
-
-void PhoneBook::displayAll() {
-	if (_size == 0) {
-		std::cout << std::endl;
-		std::cout << "NO CONTACTS TO DISPLAY" << std::endl;
-		std::cout << std::endl;
-	}
-	else {
-		displayFirstLine();
-		displayDataOverview();
-		displayLastLine();
-	}
-}
-
-void PhoneBook::displayDataEntry(int i) {
-	_data[i].displayEntry();
-}
-
-int PhoneBook::getSize() {
-	return (_size);
 }
