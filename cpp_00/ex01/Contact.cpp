@@ -52,7 +52,7 @@ void Contact::printAndCut(std::string str) {
 	std::cout << str;
 }
 
-void	Contact::displayEntry() {
+void Contact::displayEntry() {
 	std::cout << std::endl;
 	std::cout << std::setw(12) << "FIRSTNAME : " << _firstName << std::endl;
 	std::cout << std::setw(12) << "LASTNAME : "<< _lastName << std::endl;
@@ -61,7 +61,7 @@ void	Contact::displayEntry() {
 	std::cout << std::setw(12) << "NICKNAME : "<< _darkestSecret << std::endl;
 }
 
-void	Contact::displayOverview(void) {
+void Contact::displayOverview(void) {
 	std::stringstream ss;
 	ss << _index;
 	std::string indexConvert = ss.str();

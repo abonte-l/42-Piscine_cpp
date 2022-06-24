@@ -16,7 +16,7 @@ OBJS		=	$(addprefix $(OBJSDIR), $(SRCS:.cpp=.o))
 all: $(NAME)
 
 $(NAME)	: $(OBJS)
-	@$(CXX) -o $(NAME) $(OBJS)
+	$(CXX) -o $(NAME) $(OBJS)
 	@echo "Compilation of \033[33;1m$(NAME)\033[0;1m: [\033[1;32mOK\033[0;1m]\033[0m"
 
 $(OBJSDIR)%.o:	%.cpp

@@ -2,21 +2,26 @@
 #include <cstdlib>
 
 void 	addDisplay(PhoneBook& repertoire) {
-	std::cout << "ADDING A CONTACT" << std::endl;
+	std::cout << "\033[1;31mADDING A CONTACT\033[0;1m" << std::endl;
 	repertoire.addEntry();
 }
 
 void 	searchDisplay(PhoneBook& repertoire) {
 	std::string selection;
-	std::cout << "SEARCH ENGINE" << std::endl;
+	std::cout << "\033[1;31mSEARCH ENGINE\033[0;1m" << std::endl;
 	repertoire.displayAll();
 	std::cout << std::endl;
-	do {
-	std::cout << "SELECT THE CONTACT TO DISPLAY BY ENTER IT'S INDEX" << std::endl;
-	std::getline(std::cin, selection);
-	} while (!(std::strtol(selection.data(), NULL, 10) <= repertoire.getSize() && std::strtol(selection.data(), NULL, 10) >= 1));
-	int i = std::strtol(selection.data(), NULL, 10);
-	repertoire.displayDataEntry(i -1);
+	if (repertoire.getSize() > 0) {
+		do {
+		std::cout << "SELECT THE CONTACT TO DISPLAY BY ENTER IT'S INDEX" << std::endl;
+		std::getline(std::cin, selection);
+		if (std::cin.eof())
+				return;
+		} while (!(std::strtol(selection.data(), NULL, 10) <= repertoire.getSize() && std::strtol(selection.data(), NULL, 10) >= 1));
+		int i = std::strtol(selection.data(), NULL, 10);
+		repertoire.displayDataEntry(i -1);
+	}
+	
 }
 
 void 	exitDisplay() {
@@ -31,7 +36,7 @@ void	homeDisplay() {
 	std::cout << std::endl;
 	std::cout << "Available Commands :" << std::endl;
 	std::cout << std::endl;
-	std::cout << "ADD : save new contact" << std::endl;
-	std::cout << "SEARCH : display a contact" << std::endl;
-	std::cout << "EXIT : close MY_AWESOME_PHONE_BOOK" << std::endl;
+	std::cout << std::setw(10)<< "ADD : " << "save new contact" << std::endl;
+	std::cout << std::setw(10)<< "SEARCH : " << "display a contact" << std::endl;
+	std::cout << std::setw(10)<< "EXIT : " << "close MY_AWESOME_PHONE_BOOK" << std::endl;
 }
