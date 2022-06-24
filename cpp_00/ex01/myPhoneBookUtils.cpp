@@ -36,7 +36,10 @@ void	homeDisplay() {
 	std::cout << std::endl;
 	std::cout << "Available Commands :" << std::endl;
 	std::cout << std::endl;
-	std::cout << std::setw(10)<< "ADD : " << "save new contact" << std::endl;
-	std::cout << std::setw(10)<< "SEARCH : " << "display a contact" << std::endl;
-	std::cout << std::setw(10)<< "EXIT : " << "close MY_AWESOME_PHONE_BOOK" << std::endl;
+	std::cout << std::setw(10)<< "ADD : ";
+	std::cout << "save new contact" << std::endl;
+	std::cout << std::setw(10)<< "SEARCH : ";
+	std::cout << "display a contact" << std::endl;
+	std::cout << std::setw(10)<< "EXIT : ";
+	std::cout << "close MY_AWESOME_PHONE_BOOK" << std::endl;
 }
