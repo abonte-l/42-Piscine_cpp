@@ -13,7 +13,7 @@ void 	searchDisplay(PhoneBook& repertoire) {
 	std::cout << std::endl;
 	if (repertoire.getSize() > 0) {
 		do {
-		std::cout << "SELECT THE CONTACT TO DISPLAY BY ENTER IT'S INDEX" << std::endl;
+		std::cout << "SELECT THE CONTACT TO DISPLAY BY ENTER ITS INDEX" << std::endl;
 		std::getline(std::cin, selection);
 		if (std::cin.eof())
 				return;

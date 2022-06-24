@@ -26,6 +26,5 @@ class	Contact {
 		void displayEntry();
 		void displayOverview(void);
 };
-		
 
 #endif
