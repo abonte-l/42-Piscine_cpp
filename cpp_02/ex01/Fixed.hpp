@@ -17,6 +17,8 @@ class	Fixed {
 
 		int getRawBits() const;
 		void setRawBits(int const);
+		float toFloat() const;
+		int toInt() const;
 }; 
 
 #endif
