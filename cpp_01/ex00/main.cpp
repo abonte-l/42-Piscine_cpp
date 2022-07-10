@@ -1,31 +1,17 @@
 #include "Zombie.hpp"
 
-const std::string zombiesRandNAme[] {
-	"\033[1;32mCrawly McBrains\033[0;1m",
-	"\033[1;32mWalker Spew\033[0;1m",
-	"\033[1;32mSpewy Eyeball\033[0;1m",
-	"\033[1;32mFester McBrains\033[0;1m",
-	"\033[1;32mFleshy Necro\033[0;1m",
-	"\033[1;32mHungry Guts\033[0;1m",
-	"\033[1;32mBrainy Undead\033[0;1m",
-	"\033[1;32mFleshy Fleshington\033[0;1m",
-};
-
-const int zombieRandNameSize = (sizeof(zombiesRandNAme) / sizeof(std::string));
-
-
 int	main() {
-	std::string zombieName[3];
-	 for (int i = 0; i < 3; i++) 
-		zombieName[i] = zombiesRandNAme[rand() % zombieRandNameSize];
-	std::cout << "Generate zombie number 01" << std::endl;
-	Zombie zombieRand01(zombieName[0]);
+
+	std::cout << "\033[1;37mGenerate zombie number 01" << std::endl;
+	Zombie zombieRand01("\033[1;32mFleshy Fleshington\033[0;1m");
 	zombieRand01.announce();
+
 	std::cout << "Generate zombie number 02" << std::endl;
-	Zombie *zombieRand02 = newZombie(zombieName[1]);
+	Zombie *zombieRand02 = newZombie("\033[1;32mFester McBrains\033[0;1m");
 	zombieRand02->announce();
 	delete(zombieRand02);
+	
 	std::cout << "Generate zombie number 03" << std::endl;
-	randomChump(zombieName[2]);
+	randomChump("\033[1;32mBrainy Undead\033[0;1m");
 	return (0);
 }
