@@ -4,7 +4,7 @@ int	main(int ac, char **av) {
 	Harl harl;
 
 	if (ac != 2) {
-		std::cout << "Error : Not enough arguments " << std::endl;
+		std::cout << ERROR_ARG << std::endl;
 		return (-1);
 	}
 
@@ -17,23 +17,20 @@ int	main(int ac, char **av) {
 
 	switch (getFilter(av[1])) {
 		case DEBUG:
-			std::cout << "[ DEBUG ]"<< std::endl;
+			std::cout << LEVEL_01 << std::endl;
 			harl.complain("DEBUG");
-			break;
 		case INFO:
-			std::cout << "[ INFO ]"<< std::endl;
+			std::cout << LEVEL_02 << std::endl;
 			harl.complain("INFO");
-			break;
 		case WARNING:
-			std::cout << "[ WARNING ]"<< std::endl;
+			std::cout << LEVEL_03 << std::endl;
 			harl.complain("WARNING");
-			break;
 		case ERROR:
-			std::cout << "[ ERROR ]"<< std::endl;
+			std::cout << LEVEL_04 << std::endl;
 			harl.complain("ERROR");
 			break;
 		default:
-			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+			std::cout << DEFAULT_MESS << std::endl;
 			break;
 		
 	}

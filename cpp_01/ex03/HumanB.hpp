@@ -4,6 +4,10 @@
 #include <iostream>
 #include "Weapon.hpp"
 
+#define NAME_B "\033[1;34mJim\033[0;0m"
+
+#define ACTION " attacks with "
+
 class HumanB {
 	private:
 		std::string _name;

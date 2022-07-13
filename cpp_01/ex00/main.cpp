@@ -2,16 +2,16 @@
 
 int	main() {
 
-	std::cout << "\033[1;37mGenerate zombie number 01" << std::endl;
-	Zombie zombieRand01("\033[1;32mFleshy Fleshington\033[0;1m");
-	zombieRand01.announce();
+	std::cout << GEN_Z1 << std::endl;
+	Zombie zombie1(Z1_NAME);
+	zombie1.announce();
 
-	std::cout << "Generate zombie number 02" << std::endl;
-	Zombie *zombieRand02 = newZombie("\033[1;32mFester McBrains\033[0;1m");
-	zombieRand02->announce();
-	delete(zombieRand02);
+	std::cout << GEN_Z2 << std::endl;
+	Zombie *zombie2 = newZombie(Z2_NAME);
+	zombie2->announce();
+	delete(zombie2);
 	
-	std::cout << "Generate zombie number 03" << std::endl;
-	randomChump("\033[1;32mBrainy Undead\033[0;1m");
+	std::cout << GEN_Z3 << std::endl;
+	randomChump(Z3_NAME);
 	return (0);
 }

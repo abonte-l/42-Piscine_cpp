@@ -10,12 +10,12 @@ Zombie::Zombie(std::string name) : _name(name) {
 };
 
 Zombie::~Zombie() {
-	std::cout << "🧟 " << _name  <<  " Dying zombie sounds " << std::endl;
+	std::cout << ZOMBIE_IC << _name  <<  D_ZOMBIE_SNORT << std::endl;
 }
 
 void Zombie::announce(void) {
 
-	std::cout << "🧟 " <<  _name << " 🧠" << " BraiiiiiiinnnzzzZ... " << "🧠" << std::endl;
+	std::cout << ZOMBIE_IC <<  _name << BRAIN_IC << ZOMBIE_SNORT << BRAIN_IC << std::endl;
 }
 
 void Zombie::setName(std::string name) {
