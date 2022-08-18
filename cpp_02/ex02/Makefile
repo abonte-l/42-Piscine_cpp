@@ -1,10 +1,10 @@
 NAME 		=	fixed
 
-SRCS		=	main.cpp			Fixed.cpp				FixedUtils.cpp \
+SRCS		=	main.cpp			Fixed.cpp				DisplayUtils.cpp \
 				FixedGetSetter.cpp	FixedArithmetic.cpp		FixedCompar.cpp \
-				FixedMinaMax.cpp	FixedIncrDecr.cpp		
+				FixedMinaMax.cpp	FixedIncrDecr.cpp		TestsUtils.cpp
 
-HDRS		=	Fixed.hpp		
+HDRS		=	Fixed.hpp			FixedDefine.hpp	
 
 CXX			=	c++
 
