@@ -3,14 +3,9 @@
 obj
 a.out*
 span
-replaceIt
-megaphone
-myPhoneBook
-zombiefier
-brainizer
-fighting
-harl
-harlFilter
+fixed
+myphonebook
+harlfilter
 
 # libraries
 *.a
@@ -25,8 +20,16 @@ harlFilter
 *.swp
 *.vim
 
+# vscode utils
+*.json
+
+
 # ctags
 tags
 
 # debug
 .gdb_history
+
+#stuff
+
+*.txt
