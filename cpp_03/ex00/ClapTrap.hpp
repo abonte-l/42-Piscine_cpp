@@ -1,12 +1,27 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: abonte-l <abonte-l@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/18 13:13:15 by abonte-l          #+#    #+#             */
-/*   Updated: 2022/08/18 13:13:16 by abonte-l         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#ifndef CLAPTRAP_HPP
+# define CLAPTRAP_HPP
+
+#include <iostream>
+
+#include "ClapTrapDefine.hpp"
+
+class	ClapTrap {
+	private:
+	std::string _name;
+	int _hit;
+	int _energy;
+	int _damage;
+
+	public:
+	ClapTrap();
+	ClapTrap(std::string const);
+	ClapTrap& operator=(const ClapTrap&);
+	~ClapTrap();
+
+	void attack(const std::string&);
+	void takeDamage(unsigned int);
+	void beRepaired(unsigned int);
+};
+
+#endif
 

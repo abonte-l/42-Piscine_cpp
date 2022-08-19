@@ -14,7 +14,7 @@ NAME 		=	claptrap
 
 SRCS		=	main.cpp		ClapTrap.cpp		
 
-HDRS		=	ClapTrap.hpp		
+HDRS		=	ClapTrap.hpp	ClapTrapDefine.hpp	
 
 CXX			=	c++
 
